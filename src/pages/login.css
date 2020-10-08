@@ -1,0 +1,85 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--primary-background);
+}
+
+.login__container{
+    min-width: 60vw;
+    min-height: 40vh;
+    height: max-content;
+    display: flex;
+
+}
+
+.login__container>div{
+    width: 50%;
+}
+
+.login__hero>img{
+    height: 350px;
+    width: auto;
+}
+
+
+.login__form>form{
+    min-height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.login__form>form>.MuiTextField-root{
+    margin: 10px 0;
+    border-color: var(--primary-color) !important;
+}
+
+.login__form>form>.MuiButton-text	{
+    /* padding: 10px !important; */
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    text-transform: initial;
+    font-size: 20px;
+}
+
+.login__form form p{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login__form .MuiButton-outlined{
+    border-color: var(--primary-color) !important;
+    font-size: 20px !important;
+    text-transform: initial !important;
+    color: var(--primary-color) !important;
+}
+
+.MuiAlert-action{
+    margin-bottom: 20px !important;
+}
+
+@media (max-width:900px){
+    .login__hero{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .login__hero>img{
+        height: 100px;
+        width: auto;
+    }
+
+    .login__container{
+       min-width: 90vw;
+    }
+
+    .login__form{
+        min-width: 100%;
+    }
+}

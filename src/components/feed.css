@@ -1,0 +1,43 @@
+.feed{
+    flex: 0.4;
+    border-right: 1px solid var(--primary-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+
+@media (max-width:1294px){
+    .feed{
+        flex:0.8;
+        max-width: 80vw;
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.feed::-webkit-scrollbar {
+    display: none;
+  }
+
+  .feedHeader{
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 100;
+      border: 1px solid var(--primary-background);
+      padding: 15px 20px;
+  }
+
+  .feedHeader>h2{
+      font-weight: 800;
+      font-size: 20px;
+  }
+
+  @media (max-width:800px){
+    .feed{
+        min-width: 98.5vw;
+        height: 89vh;
+    }
+
+  }
